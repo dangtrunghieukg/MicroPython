@@ -7,7 +7,7 @@ __author__ = 'Dang Trung Hieu'
 __license__ = "www.gvhieu.com, www.toituhoc.edu.vn"
 
 class SERVO_ESP:
-    def __init__(self, servo_Pin, freqServoDefault = 50, dutyMinDefault=25, dutyMaxDefault=130):
+    def __init__(self, servo_Pin, freqServoDefault = 50, dutyMinDefault=29, dutyMaxDefault=150):
         self.servoPin = machine.PWM(Pin(servo_Pin, Pin.OUT), freq = freqServoDefault, duty = dutyMinDefault)
         self.dutyMin = dutyMinDefault
         self.dutyMax = dutyMaxDefault
